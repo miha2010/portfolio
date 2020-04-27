@@ -3,7 +3,7 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
+  font-family: 'Roboto',"Helvetica Neue","Open Sans",Arial,sans-serif;
 }
 
 @font-face {
@@ -1647,7 +1647,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .navbar, .brand, .btn-simple, a, .td-name, td {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Verlag-Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Roboto","Verlag-Book","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h1, .h1 {
@@ -1684,7 +1684,7 @@ h5 {
 p {
   font-size: 1em;
   line-height: 1.4737;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 .75em;
 }
 
@@ -1692,7 +1692,7 @@ p,
 label,
 .form-control,
 .title h5 {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto","Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -2412,9 +2412,9 @@ a.carousel-control span.fa {
   transform: translateY(-50%);
 }
 .section-header h1 {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.8em;
   font-weight: 100;
-  font-size: 6em;
+  font-size: 4em;
   font-family: "Slim-Joe";
   text-transform: uppercase;
   text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
@@ -3840,3 +3840,13 @@ body.noscroll {
 .font {
     font-weight: 600 !important;
 }
+
+h5.subheading {
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+p.widi {
+  margin-top: 10px;
+}
+
