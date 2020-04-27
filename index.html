@@ -1,0 +1,557 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Mihovil Santek - Portfolio</title>
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/rubick.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./assets//img/faviconn.ico">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+  <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+  <link href="assets/css/fonts/Rubik-Fonts.css" rel="stylesheet" />
+  <!-- MAIL -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script type="text/javascript">(function () { emailjs.init('user_s7g1KBKUaRI1vD6EFDbpK'); })();</script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        const userName = document.querySelector('[name="user_name"]').value;
+        const userEmail = document.querySelector('[name="user_email"]').value;
+        const userMessage = document.querySelector('[name="message"]').value;
+
+        emailjs.send('gmail', 'template_Ndpsk7kc', {
+          user_name: userName,
+          user_email: userEmail,
+          user_message: userMessage,
+        });
+      });
+    }
+  </script>
+  <!-- MAIL -->
+</head>
+
+<body>
+  <div class="loading ">
+    <div class="loading-container">
+      <p>Just a sec...</p>
+      <img class="loader" src="assets/img/rubik.svg" />
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar bar1"></span>
+          <span class="icon-bar bar2"></span>
+          <span class="icon-bar bar3"></span>
+        </button>
+        <a href="#" class="navbar-brand">Miha</a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right navbar-uppercase">
+          <li class="social-links"><a href="https://www.linkedin.com/in/mihovil-santek-9087a4170/"><i
+                class="linkedin fa fa-linkedin"></i></a></li>
+          <li><a href="" data-scroll="true" data-id="#about">About</a></li>
+          <li><a href="" data-scroll="true" data-id="#projects">Projects</a></li>
+          <li><a href="" data-scroll="true" data-id="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <div class="section section-header">
+      <div class="parallax pattern-image">
+        <img src="assets/img/rubik_background.jpg" />
+        <div class="container">
+          <div class="content">
+            <h1 class="font">
+              Mihovil
+              <br />
+              Santek
+            </h1>
+            <h5>Frontend React Developer</h5>
+          </div>
+        </div>
+      </div>
+      <a href="" data-scroll="true" data-id="#whoWeAre" class="scroll-arrow hidden-xs hidden-sm">
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+
+    <div class="section section-we-are-1" id="whoWeAre">
+      <div class="text-area">
+        <div class="container">
+          <div class="row">
+            <div class="title add-animation" id="animationTest">
+              <h2>Front End Developer</h2>
+              <p class="large">
+                A website should be designed for the people who will use
+                it, so that's exactly what I do. Using React I build fast, interactive websites which are aimed towards
+                the end user.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax pattern-image hidden-xs">
+        <img class="parallax-img" src="assets/img/rubic_background_small.jpg" />
+      </div>
+    </div>
+
+    <div class="section section-we-do-2" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="title add-animation">
+            <h2>What I do</h2>
+            <p>Web Applications that I created encompass only the best of practices. They are: </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="card add-animation animation-1">
+              <div class="icon"><i class="pe-7s-rocket"></i></div>
+              <h3>Fast</h3>
+              <p>Fast load times and lag free interaction, my highest priority.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card add-animation animation-2">
+              <div class="icon"><i class="pe-7s-exapnd2"></i></div>
+              <h3>Responsive
+              </h3>
+              <p>My layouts will work on any device, big or small.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card add-animation animation-3">
+              <div class="icon">
+                <i class="pe-7s-light"></i>
+              </div>
+              <h3>Intuitive </h3>
+              <p>Strong preference for easy to use, intuitive UX/UI.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card add-animation animation-4">
+              <div class="icon">
+                <i class="pe-7s-magic-wand"></i>
+              </div>
+              <h3>Dynamic
+              </h3>
+              <p>Websites don't have to be static, I love making pages come to life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section section-we-made-3 section-with-hover" id="projects">
+      <div class="container">
+        <div class="text-area">
+          <div class="title add-animation">
+            <h2>Projects</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laudantium mollitia tempora, vero
+              obcaecati omnis et explicabo dolorum quod, veniam fugiat, perspiciatis soluta quasi a repellendus quis
+              magnam rem officia!</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="project add-animation animation-1">
+              <img src="assets/img/covid_19.jpg">
+              <div class="over-area over-area-sm" onClick="" data-target="project_1">
+                <div class="content">
+                  <h4>COVID-19 Tracker</h4>
+                  <p>React.js, Chart.js, Material UI and much more.</p>
+                </div>
+                <button class="btn hidden-sm hidden-xs" onClick="rubik.showModal(this)" data-target="project_1">
+                  More Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="project add-animation animation-1">
+              <img src="assets/img/covid_19.jpg">
+              <div class="over-area over-area-sm" onClick="" data-target="project_1">
+                <div class="content">
+                  <h4>COVID-19 Tracker</h4>
+                  <p>React.js, Chart.js, Material UI and much more.</p>
+                </div>
+                <button class="btn hidden-sm hidden-xs" onClick="rubik.showModal(this)" data-target="project_1">
+                  More Details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="project add-animation animation-1">
+              <img src="assets/img/covid_19.jpg">
+              <div class="over-area over-area-sm" onClick="" data-target="project_1">
+                <div class="content">
+                  <h4>COVID-19 Tracker</h4>
+                  <p>React.js, Chart.js, Material UI and much more.</p>
+                </div>
+                <button class="btn hidden-sm hidden-xs" onClick="rubik.showModal(this)" data-target="project_1">
+                  More Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="project add-animation animation-1">
+              <img src="assets/img/covid_19.jpg">
+              <div class="over-area over-area-sm" onClick="" data-target="project_1">
+                <div class="content">
+                  <h4>COVID-19 Tracker</h4>
+                  <p>React.js, Chart.js, Material UI and much more.</p>
+                </div>
+                <button class="btn hidden-sm hidden-xs" onClick="rubik.showModal(this)" data-target="project_1">
+                  More Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-contact-1" id="contact">
+      <div class="container">
+        <div class="text-area">
+          <div class="title add-animation">
+            <h2>Contact Us</h2>
+            <p>Find us in the heart of Paris in an old brick block of flats</p>
+          </div>
+
+          <div class="contact-form">
+            <div class="row">
+              <form id="contact-form" class="col-md-12 col-sm-7">
+                <div class="col-md-6 form-group add-animation animation-1">
+                  <input name="user_name" type="text" value="" placeholder="Your Full Name" class="form-control">
+                </div>
+                <div class="col-md-6 form-group add-animation animation-2">
+                  <input name="user_email" type="text" value="" placeholder="Your Email" class="form-control">
+                </div>
+                <div class="col-md-12 form-group add-animation animation-3">
+                  <textarea name="message" class="form-control" placeholder="Here you can write some nice text"
+                    rows="8"></textarea>
+                </div>
+                <button type="submit" value="Send" class="btn btn-lg btn-black pull-right">
+                  SEND <i class="fa fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  <footer class="footer footer-color-black" data-color="black">
+    <div class="container">
+      <nav class="pull-left">
+        <ul>
+          <li><a href="#about" data-scroll="true" data-id="#about">About</a></li>
+          <li><a href="#projects" data-scroll="true" data-id="#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <div class="social-area pull-right">
+        <a href="https://www.linkedin.com/in/mihovil-santek-9087a4170/"
+          class="btn btn-social btn-facebook btn-simple"><i class="fa fa-linkedin-square"></i></a>
+        <a href="https://github.com/miha2010" class="btn btn-social btn-twitter btn-simple"><i
+            class="fa fa-github-square"></i></a>
+      </div>
+      <div class="copyright">© 2020 Mononoke Studio</div>
+    </div>
+  </footer>
+  </div>
+  </div> <!-- end wrapper -->
+  <div class="project-content" id="project_1">
+    <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+    <div>
+      <div class="project-details">
+        <div class="container">
+          <div class="project-title">
+            <h2>COVID-19 Tracker</h2>
+            <p>React.js - Chart.js - Material UI</p>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="article">
+                <div class="project-image">
+                  <img src="assets/img/covid_19.jpg" />
+                </div>
+                <div class="project-text">
+                  <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+                    water
+                    spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                    <br />
+                    <div style="width: 40%; display: flex; justify-content: space-between;">
+                      <button onclick="window.location.href = 'https://github.com/miha2010/covid_19_tracker_app';"
+                        class="btn btn-lg btn-light pull-right" style="color: #fff; border-color: #fff">Source
+                        Code</button>
+                      <button onclick="window.location.href = 'https://agitated-joliot-5bd09f.netlify.app/';"
+                        class="btn btn-lg btn-light pull-right" style="color: #fff; border-color: #fff">Live
+                        Demo</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="project-content" id="project_2">
+    <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+    <div>
+      <div class="project-details">
+        <div class="container">
+          <div class="project-title">
+            <h2>Summer Men Style</h2>
+
+            <p>We've been working with Kingsman Studios and we are proud that they enjoy our results.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="article">
+                <div class="project-image">
+                  <img src="assets/img/covid_19.jpg" />
+                </div>
+                <div class="project-text">
+                  <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+                    water
+                    spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                    <br />
+                    <div style="width: 40%; display: flex; justify-content: space-between;">
+                      <button class="btn btn-lg btn-light pull-right" style="color: #fff; border-color: #fff">Source
+                        Code</button>
+                      <button class="btn btn-lg btn-light pull-right" style="color: #fff; border-color: #fff">Live
+                        Demo</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project-content" id="project_3">
+    <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+    <div>
+      <div class="project-details">
+        <div class="container">
+          <div class="project-title">
+            <h2>Watch Anish</h2>
+
+            <p>We've been working with Watch Anish since the beginning. We are proud that they enjoy our
+              results</p>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="article">
+                <div class="project-image">
+                  <img src="assets/img/covid_19.jpg" />
+                </div>
+                <div class="project-text">
+                  <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+                    water
+                    spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                    <br />
+                    <div style="width: 40%; display: flex; justify-content: space-between;">
+                      <button class="btn btn-lg btn-light pull-right" style="color: #fff; border-color: #fff">Source
+                        Code</button>
+                      <button class="btn btn-lg btn-light pull-right" style="color: #fff; border-color: #fff">Live
+                        Demo</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project-content" id="project_4">
+    <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+    <div>
+      <div class="project-details">
+        <div class="container">
+          <div class="project-title">
+            <h2>Watch Anish</h2>
+
+            <p>We've been working with Watch Anish since the beginning. We are proud that they enjoy our
+              results</p>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="article">
+                <div class="project-image">
+                  <img src="assets/img/covid_19.jpg" />
+                </div>
+                <div class="project-text">
+                  <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+                    water
+                    spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                    <br />
+                    <div style="width: 40%; display: flex; justify-content: space-between;">
+                      <button class="btn btn-lg btn-light pull-right" style="color: #fff; border-color: #fff">Source
+                        Code</button>
+                      <button class="btn btn-lg btn-light pull-right" style="color: #fff; border-color: #fff">Live
+                        Demo</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project-content" id="project_5">
+    <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+    <div>
+      <div class="project-details">
+        <div class="container">
+          <div class="project-title">
+            <h2>Watch Anish</h2>
+
+            <p>We've been working with Watch Anish since the beginning. We are proud that they enjoy our
+              results</p>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="article">
+                <div class="project-image">
+                  <img src="assets/img/rubik_background2.jpg" />
+                </div>
+                <div class="project-text">
+                  <h3>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce<span>.</span></h3>
+                  <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+                    water
+                    spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion
+                    desert
+                    raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo
+                    shoot
+                    green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout
+                    coriander
+                    water
+                    chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.</p>
+                  <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+                    water
+                    spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion
+                    desert
+                    raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo
+                    shoot
+                    green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout
+                    coriander
+                    water
+                    chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.</p>
+                  <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea
+                    sprouts
+                    fava
+                    bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut
+                    soko
+                    zucchini.Celery potato scallion desert raisin horseradish spinach carrot
+                    soko<span>.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project-content" id="project_6">
+    <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+    <div>
+      <div class="project-details">
+        <div class="container">
+          <div class="project-title">
+            <h2>Watch Anish</h2>
+
+            <p>We've been working with Watch Anish since the beginning. We are proud that they enjoy our
+              results</p>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="article">
+                <div class="project-image">
+                  <img src="assets/img/rubik_background2.jpg" />
+                </div>
+                <div class="project-text">
+                  <h3>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce<span>.</span></h3>
+                  <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+                    water
+                    spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion
+                    desert
+                    raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo
+                    shoot
+                    green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout
+                    coriander
+                    water
+                    chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.</p>
+                  <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth
+                    water
+                    spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion
+                    desert
+                    raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo
+                    shoot
+                    green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout
+                    coriander
+                    water
+                    chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.</p>
+                  <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea
+                    sprouts
+                    fava
+                    bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut
+                    soko
+                    zucchini.Celery potato scallion desert raisin horseradish spinach carrot
+                    soko<span>.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--   core js files    -->
+<script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+
+<!--   file for adding vertical points where we activate the elements animation   -->
+<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+
+<!--  js library for devices recognition -->
+<script type="text/javascript" src="assets/js/modernizr.js"></script>
+
+<!--  script for google maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<!--   file where we handle all the script from the Rubik page   -->
+<script type="text/javascript" src="assets/js/rubick.js"></script>
+
+</html>
