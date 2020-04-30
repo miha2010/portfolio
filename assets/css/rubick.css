@@ -3850,3 +3850,13 @@ p.widi {
   margin-top: 10px;
 }
 
+.ms-height {
+  height: 300px;
+  margin-bottom: 10px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .ms-height {
+        height: initial !important;
+    }
+}
